@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio | Home</title>
+</head>
+<body>
+
+  <section class="header">
+    <h3>LOGO</h3>
+    <div class="nav-links" id="navLinks">
+      <i class="fa-solid fa-xmark" id="xmark" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <button class="hireme-btn">Hire Me</button>
+    <i class="fa-solid fa-bars" id="menu" onclick="showMenu()"></i>
+  </section>
+
+<section class="main">
+
+  <div class="description">
+  <h4>Hi, I am <span id="flo">Florin</span></h4><br>
+    <p>Passionate about blending creativity and code, I’m a web developer who crafts seamless, user-centered experiences with every pixel,<br> bringing ideas to life with clean, functional design.</p>
+    <br><p>Let's create something awesome together!</p>
+  </div>
+
+  <div class="techstack">
+    <div class="techicon"><img src="html.png" alt=""></div>
+    <div class="techicon"><img src="css-3.png" alt=""></div>
+    <div class="techicon"><img src="git.png" alt=""></div>
+    <div class="techicon"><img src="github.png" alt=""></div>
+  </div>
+</section>
+
+<section class="footer">
+
+  <div class="left">
+    <h4>LOGO|NAME</h4>
+    <p>Creative Developer</p>
+  </div>
+
+  <div class="useful-links">
+    <h4>Useful Links</h4>
+    <a href="index.html">Home</a>
+    <a href="">About</a>
+    <a href="">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="socialmedia">
+    <h4>Social Media</h4>
+    <div class="socials">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" id="socialicons"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f" id="socialicons"></i></a>
+      <a href="https://github.com/en" target="_blank"><i class="fa-brands fa-square-github" id="socialicons"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin" id="socialicons"></i></a>
+    </div>
+  </div>
+
+  <div class="newsletter">
+    <h4>Newsletter</h4>
+    <p>Subscribe for more news and updates</p>
+    <form>
+      <input type="email" placeholder="Your email@domain">
+      <button type="button">
+        <i class="fa-regular fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+
+</section>
+
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
